@@ -8,10 +8,10 @@ class App < Sinatra::Application
 
   def initialize
     super
-    @database_connection = GschoolDatabaseConnection.establish(ENV(["RACK_ENV"]))
+    @database_connection = GschoolDatabaseConnection::DatabaseConnection.establish(ENV["RACK_ENV"])
   end
 
   get "/" do
-
+    erb :form, :locals => {}, :layout => :form_layout
   end
 end

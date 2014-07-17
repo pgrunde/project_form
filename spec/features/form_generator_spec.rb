@@ -1,10 +1,10 @@
 require "spec_helper"
 
-describe FormGenerator do
-  it "foo" do
-    expect(FormGenerator.new).to eq("foo")
-  end
-end
+# describe FormGenerator do
+#   it "foo" do
+#     expect(FormGenerator.new).to eq("foo")
+#   end
+# end
 
 feature "form_page" do
   before(:each) do

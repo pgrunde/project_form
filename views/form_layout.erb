@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clearance Form Maker</title>
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link href="../style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+
+<nav>
+  <div class="wrapper">
+    <section class="clearfix">
+      <article class="one_half_nm" id="navigate_left">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Jobs</a></li>
+          <li><a href="">Candidates</a></li>
+        </ul>
+      </article>
+
+      <article class="one_half_nm" id="navigate_right">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Jobs</a></li>
+          <li><a href="">Candidates</a></li>
+        </ul>
+      </article>
+    </section>
+  </div>
+</nav>
+
+<div id="content">
+  <div class="wrapper">
+    <%= yield %>
+  </div>
+</div>
+
+</body>
+</html>
