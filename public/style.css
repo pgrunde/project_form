@@ -13,6 +13,14 @@ nav ul li {
     padding-right: 15px;
 }
 
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 #navigate_right ul {
     position:relative;
     float:right;
@@ -21,6 +29,79 @@ nav ul li {
 
 #content {
     background-color: #fff;  /* White */
+}
+
+.home_button {
+    height: 70px;
+    border:2px solid black;
+    vertical-align: middle;
+    line-height: 15px;
+    background-color: #c3dfff;
+    text-align: center;
+    margin-top:50px;
+    border-radius:15px;
+    text-decoration: none;
+}
+
+#register_button {
+    height: 70px;
+    border:2px solid black;
+    vertical-align: middle;
+    line-height: 70px;
+    background-color: #2598ff;
+    text-align: center;
+    margin-top:50px;
+    border-radius:5px;
+    text-decoration: none;
+}
+
+#final_form {
+    height: 500px;
+    border:2px solid black;
+    vertical-align: middle;
+    line-height: 70px;
+    background-color: #bafcff;
+    text-align: center;
+    margin-top:50px;
+    border-radius:5px;
+    text-decoration: none;
+}
+
+#add_input {
+    height:62px;
+    width:62px;
+    border:2px solid black;
+    vertical-align: middle;
+    line-height: 70px;
+    background-color: #bafcff;
+    text-align: center;
+    margin:auto;
+    margin-top:250px;
+    border-radius:5px;
+    text-decoration: none;
+}
+
+#stage_and_options {
+    height: 500px;
+    border:2px solid black;
+    vertical-align: middle;
+    line-height: 70px;
+    background-color: #bafcff;
+    text-align: center;
+    margin-top:50px;
+    border-radius:5px;
+    text-decoration: none;
+}
+
+#stage {
+    width:364px;
+    height: 230px;
+    vertical-align: middle;
+    line-height: 70px;
+    background-color: #b2ffd2;
+    text-align: center;
+    border-radius:5px;
+    text-decoration: none;
 }
 
 .wrapper {
@@ -35,6 +116,7 @@ nav ul li {
 .one_third {	 width:300px; }
 .two_third {	 width:620px; }
 .one_fourth {	 width:220px; }
+.one_eighth { width:102px;}
 .three_fourth { width:700px; }
 .full_column {	 width:940px; }
 
@@ -43,6 +125,7 @@ nav ul li {
 .two_third_nm {width:626px; margin:0;}
 .one_fourth_nm {width:235px; margin:0;}
 .one_eighth_nm {width:122px; margin:0;}
+.three_eighth_nm {width:366px; margin:0;}
 .three_fourth_nm {width:705px; margin:0;}
 
 

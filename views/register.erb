@@ -1,0 +1,19 @@
+<section class="clearfix">
+  <!-- Register -->
+  <article class="full_column">
+    <h2>Register</h2>
+    <% if flash[:register_fail] %>
+      <%= flash[:register_fail] %>
+    <% end %>
+    <form action="/register" method="post">
+      <ul>
+        <li><label for="username">Enter a username</label></li>
+        <li><input id="username" type="text" name="username"/></li>
+        <li><label for="password">Enter a password</label></li>
+        <li><input id="password" type="text" name="password"/></li>
+        <li><button type="submit">Submit</button></li>
+      </ul>
+    </form>
+  </article>
+
+</section>

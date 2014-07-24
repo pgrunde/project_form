@@ -1,0 +1,64 @@
+<% if session[:user_id] == nil %>
+  <section class="clearfix">
+
+    <!-- Login -->
+    <article class="one_half">
+      <h2>Login</h2>
+      <% if flash[:register_notice] %>
+        <%= flash[:register_notice] %>
+      <% end %>
+      <% if flash[:login_notice] %>
+        <%= flash[:login_notice] %>
+      <% end %>
+      <form action="/login" method="post">
+        <ul>
+          <li><label for="username">Username</label></li>
+          <li><input id="username" type="text" name="username"/></li>
+          <li><label for="password">Password</label></li>
+          <li><input id="password" type="text" name="password"/></li>
+          <li><input type="submit" value="Log In"/></li>
+        </ul>
+      </form>
+    </article>
+
+    <!-- Register -->
+    <article class="one_half">
+      <a href="/register">
+        <div id="register_button">
+          Register
+        </div>
+      </a>
+    </article>
+  </section>
+<% else %>
+  <section class="clearfix">
+
+    <!-- Candidates -->
+    <article class="one_third">
+      <a href="/candidates">
+        <div class="home_button" id="candidates">
+          <h2>Your Candidates</h2>
+        </div>
+      </a>
+    </article>
+
+    <!-- Jobs -->
+    <article class="one_third">
+      <a href="/jobs">
+        <div class="home_button" id="/jobs">
+          <h2>Your Jobs</h2>
+        </div>
+      </a>
+    </article>
+
+    <!-- Options -->
+    <article class="one_third">
+      <a href="/options">
+        <div class="home_button" id="options">
+          <h2>Options</h2>
+        </div>
+      </a>
+    </article>
+
+  </section>
+<% end %>
