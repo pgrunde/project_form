@@ -66,14 +66,83 @@
 
   <article class="one_eighth_nm">
     <div id="add_input">
-
+      <!-- Text Submit -->
+      <div id="text_submit">
+        <input type="submit" form="form_staged_text" value="Add Text">
+      </div>
     </div>
   </article>
 
   <article class="three_eighth_nm">
     <div id="stage_and_options">
       <div id="stage">
+      <!-- divs whose z-index change with input selector clicks -->
 
+      <!-- neutral -->
+      <div id="staged_neutral">
+        <h2>Select an input!</h2>
+      </div>
+      <!-- Text -->
+      <div id="staged_text">
+        <form id="form_staged_text">
+          <ul>
+            <li><label for="text_label">Add a text label:</label></li>
+            <li><input type="text" id="text_label"></li>
+            <li><input type="text" id="text_disabled" disabled></li>
+          </ul>
+        </form>
+      </div>
+
+      <!-- Text Area -->
+      <div id="staged_text_area">
+        <form id="form_staged_textarea">
+          <ul>
+            <li><label for="textarea_label">Add a text area label:</label></li>
+            <li><input type="text" id="textarea_label"></li>
+            <li><textarea id="textarea_disabled" disabled></textarea></li>
+          </ul>
+        </form>
+      </div>
+
+      <!-- Checkbox -->
+      <div id="staged_checkbox">
+        <form id="form_staged_checkbox">
+          <ul>
+            <li><label for="main_checkbox_label">Add a main checkbox label:</label></li>
+            <li><input type="text" id="main_checkbox_label"></li>
+            <li><label for="checkbox01">Butts</label>
+              <input type="checkbox" id="checkbox01" disabled></li>
+            <li><label for="checkbox02">Pwop</label>
+              <input type="checkbox" id="checkbox02" disabled></li>
+          </ul>
+        </form>
+      </div>
+
+        <!-- Radio -->
+        <div id="staged_radio">
+          <form id="form_staged_radio">
+            <ul>
+              <li><label for="main_radio_label">Add a main radio label:</label></li>
+              <li><input type="text" id="main_radio_label"></li>
+              <li><label for="radio01">Butts</label>
+                <input type="radio" id="radio01" disabled></li>
+              <li><label for="radio02">Pwop</label>
+                <input type="radio" id="radio02" disabled></li>
+            </ul>
+          </form>
+        </div>
+
+        <!-- Date -->
+        <div id="staged_date">
+          <form id="form_staged_date">
+            <ul>
+              <li><label for="date_label">Add a date label</label></li>
+              <li><input type="text" id="date_label"></li>
+              <li><input type="date" id="date" disabled></li>
+            </ul>
+          </form>
+        </div>
+      <!-- end input stage -->
       </div>
     </div>
   </article>
